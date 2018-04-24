@@ -31,3 +31,12 @@
     background-color: transparent;
     border-color: #ccc;
   }
+
+  .yourOtp{
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  .rule{
+    width: 40%;
+  }

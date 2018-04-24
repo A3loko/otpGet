@@ -9,5 +9,8 @@
   <input type="text" placeholder="Enter your number here" [(ngModel)]="searchInput" name="search"/><br>
   <button type="button" class="btn btn-default" (click)="searchOTP()">Go!</button>
 </form>
-
-{{res}}
+<div class="yourOtp">
+  Your OTP is: <br>
+  <hr class="rule">  
+{{otpList}}
+</div>

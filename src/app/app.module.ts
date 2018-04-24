@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { SearchService } from '../app/search.service';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent } from './app.component';
@@ -14,9 +16,10 @@ import { GetOtpComponent } from './get-otp/get-otp.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

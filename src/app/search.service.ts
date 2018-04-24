@@ -10,7 +10,7 @@ export class SearchService {
   constructor(private http:Http) { }
 
   getOTP(searchInput:string){
-    return this.http.get(get_ip.search_api+searchInput).map(data => data.text,(error:any) => {this.handleError();});
+    return this.http.get(get_ip.search_api+searchInput).map(data => data.json(),(error:any) => {this.handleError();});
   }
 
   handleError(){

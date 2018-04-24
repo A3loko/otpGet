@@ -14,13 +14,13 @@ export class GetOtpComponent implements OnInit {
 
   searchInput : string = "";
 
-  otpList : number;
+  otpList : any;
   ngOnInit() {
   }
 
   searchOTP(){
     this.searchservice.getOTP(this.searchInput).subscribe((res)=>{
-      console.log(res);
+      this.otpList=res;
     },(err)=>{
       console.log("Error : ¯\_(ツ)_/¯");
     });
